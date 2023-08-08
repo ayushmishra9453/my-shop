@@ -7,7 +7,7 @@ import {ShopContext} from '../../context/Shop-context'
   console.log(cartItems)
   return (
     <div className='product'>
-    <img src={productimage}/>
+    <img src={productimage} alt=''/>
     <div className="description">
         <p><b>{productName}</b></p>
         <p>{`Rs ${price}`}</p>

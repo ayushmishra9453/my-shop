@@ -4,7 +4,7 @@
     font-size: 40px;
 }
 .products{
-width: 90%;
+width: 100%;
 height: auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -21,10 +21,33 @@ place-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 }
+
 .product img{
     width: 400px;
 }
+@media screen and (max-width: 1300px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    } }
+
+
+    @media screen and (max-width: 850px) {
+        .product img{
+            width: 250px;
+        }
+      
+    }
+
+    @media screen and (max-width: 800px) {
+        .products {
+            grid-template-columns: 1fr;
+        }
+      
+    }
+
 .product .description{
     text-align: center;
 }
